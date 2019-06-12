@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Alexander Phillips | Blog</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on Alexander Phillips | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://example.org/tags/about/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://example.org/tags/blog/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Equations</title>
+      <link>https://example.org/tags/equations/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/equations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://example.org/tags/math/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maxwell</title>
+      <link>https://example.org/tags/maxwell/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/maxwell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physics</title>
+      <link>https://example.org/tags/physics/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/physics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sagemath</title>
+      <link>https://example.org/tags/sagemath/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/sagemath/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://example.org/tags/website/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/tags/website/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

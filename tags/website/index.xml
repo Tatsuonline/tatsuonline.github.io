@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Alexander Phillips | Blog</title>
+    <link>https://example.org/tags/website/</link>
+    <description>Recent content in Website on Alexander Phillips | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://example.org/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://example.org/about/</guid>
+      <description>My name is Alexander Phillips and this is my blog. That&amp;rsquo;s right, I have found a new way to inflict myself upon society.
+If you want to know more about my background, check out my main website here or feel free to email me at alexander(at)keemail.me.</description>
+    </item>
+    
+  </channel>
+</rss>
