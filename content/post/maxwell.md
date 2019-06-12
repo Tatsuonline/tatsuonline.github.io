@@ -1,8 +1,9 @@
 +++
+title = "Visualizing Maxwell's Equations"
 author = ["tatsu"]
 publishDate = 2019-06-01
-lastmod = 2019-06-11T23:10:46-07:00
-tags = ["Physics", "Maxwell", "Equations", "Math"]
+lastmod = 2019-06-11T23:43:06-07:00
+tags = ["Physics", "Maxwell", "Equations", "Math", "Sagemath"]
 categories = ["x", "y"]
 draft = false
 categories_weight = 123
@@ -76,7 +77,7 @@ plot_vector_field((-x,-y), (x,-2,2), (y,-2,2), figsize=9)
 
 The figure it produces is as follows:
 
-<a id="org01cf337"></a>
+<a id="org96232d7"></a>
 
 {{< figure src="/ox-hugo/negative_divergence.png" caption="Figure 1: Negative divergence of an electric vector field belonging to a point charge at the origin." >}}
 
@@ -97,7 +98,7 @@ plot_vector_field((2*x*y,y*y - x*x), (x,-2,2), (y,-2,2), figsize=9)
 
 The resulting figure is as follows:
 
-<a id="orgc6247c8"></a>
+<a id="orgfdbd687"></a>
 
 {{< figure src="/ox-hugo/true_dipole.png" caption="Figure 2: An example of a magnetic dipole displayed as a vector field." >}}
 
@@ -127,18 +128,18 @@ plot_vector_field((y,-x), (x,-2,2), (y,-2,2), figsize=9)
 
 Which results in the following figure:
 
-<a id="orgcac0e36"></a>
+<a id="orga42dfe8"></a>
 
-{{< figure src="/ox-hugo/curl.png" caption="Figure 3: An example of the curl of an electric vector field." >}}
+{{< figure src="/ox-hugo/curl.png" caption="Figure 3: An example of an electric vector field with a large positive curl." >}}
 
 By using the right hand rule on figure 3, we can see that the magnetic field lines will go into the screen. If you had a magnetic field coming out of the screen, the electric field would be produced as in figure 3 and the resulting magnetic field would oppose the one coming out of the screen.
 
 
 ## Ampère's Law {#ampère-s-law}
 
-At first glance, equation \ref{eq:4} seems complicated; it certainly is the longest of Maxwell's equations. However, once we break it down, its simplicity will become more evident. There are two new terms in this equation, **&mu;\_0** (the permeability of free space) and **J** (the total electric current density). In essence, all Ampère's law is stating is that a magnetic field can be produced by and electric current or a changing electric field.
+At first glance, equation \ref{eq:4} seems complicated; it certainly is the longest of Maxwell's equations. However, once we break it down, its simplicity will become more evident. There are two new terms in this equation, **&mu;\_0** (the permeability of free space) and **J** (the total electric current density). In essence, all Ampère's law is stating is that a magnetic field can be produced by an electric current or a changing electric field.
 
-The visualization of the magnetic field produced will be very similar to figure 2.
+The visualization of the magnetic field produced will be very similar to figure 2. If you have current running through a wire, we can use the right hand rule to see how the magnetic field would get produced around it.
 
 [^fn:1]: If you thought I was going to write out all those integrals in Latex, you thought wrong.
 [^fn:2]: This is coincidentally roughly the same excuse I get from my boss when I ask for a raise. If **m** is my salary earned, **t** is time, **i** is inflation and **w** is my will to live, we can construct the following equation: \begin{equation\*} w = \frac{\partial m}{\partial t} - \frac{\partial i}{\partial t} \end{equation\*} Please send help.
