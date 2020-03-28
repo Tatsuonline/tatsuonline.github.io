@@ -1,99 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tatsuonline.github.io/post/maxwell/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
+    <loc>https://tatsuonline.github.io/tags/earn-it/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/tags/about/</loc>
-    <lastmod>2019-06-01T12:01:49-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/tags/encryption/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/about/</loc>
-    <lastmod>2019-06-01T12:01:49-07:00</lastmod>
+    <loc>https://tatsuonline.github.io/tags/graham-blumenthal/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/tags/politics/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/tags/blog/</loc>
-    <lastmod>2019-06-01T12:01:49-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/categories/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/tags/equations/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/tags/math/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/tags/maxwell/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/tags/physics/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/post/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://tatsuonline.github.io/tags/sagemath/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/posts/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://tatsuonline.github.io/tags/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/tags/website/</loc>
-    <lastmod>2019-06-01T12:01:49-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/categories/x/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/posts/earn-it/</loc>
+    <lastmod>2020-03-27T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tatsuonline.github.io/categories/y/</loc>
-    <lastmod>2019-06-11T23:43:06-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://tatsuonline.github.io/tags/equations/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/tags/math/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/tags/maxwell/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/tags/physics/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/tags/sagemath/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/posts/maxwell/</loc>
+    <lastmod>2019-06-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tatsuonline.github.io/categories/</loc>
   </url>
   
 </urlset>

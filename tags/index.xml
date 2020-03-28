@@ -1,31 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Alexander Phillips | Blog</title>
+    <title>Tags on Tatsu Online</title>
     <link>https://tatsuonline.github.io/tags/</link>
-    <description>Recent content in Tags on Alexander Phillips | Blog</description>
+    <description>Recent content in Tags on Tatsu Online</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://tatsuonline.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>https://tatsuonline.github.io/tags/about/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      <title>EARN-IT</title>
+      <link>https://tatsuonline.github.io/tags/earn-it/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0700</pubDate>
       
-      <guid>https://tatsuonline.github.io/tags/about/</guid>
+      <guid>https://tatsuonline.github.io/tags/earn-it/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>https://tatsuonline.github.io/tags/blog/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
+      <title>Encryption</title>
+      <link>https://tatsuonline.github.io/tags/encryption/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0700</pubDate>
       
-      <guid>https://tatsuonline.github.io/tags/blog/</guid>
+      <guid>https://tatsuonline.github.io/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graham-Blumenthal</title>
+      <link>https://tatsuonline.github.io/tags/graham-blumenthal/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://tatsuonline.github.io/tags/graham-blumenthal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://tatsuonline.github.io/tags/politics/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://tatsuonline.github.io/tags/politics/</guid>
       <description></description>
     </item>
     
@@ -71,15 +89,6 @@
       <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
       
       <guid>https://tatsuonline.github.io/tags/sagemath/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Website</title>
-      <link>https://tatsuonline.github.io/tags/website/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
-      
-      <guid>https://tatsuonline.github.io/tags/website/</guid>
       <description></description>
     </item>
     

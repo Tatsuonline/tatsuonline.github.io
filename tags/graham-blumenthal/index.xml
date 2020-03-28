@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tatsu Online</title>
-    <link>https://tatsuonline.github.io/</link>
-    <description>Recent content on Tatsu Online</description>
+    <title>Graham-Blumenthal on Tatsu Online</title>
+    <link>https://tatsuonline.github.io/tags/graham-blumenthal/</link>
+    <description>Recent content in Graham-Blumenthal on Tatsu Online</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Mar 2020 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://tatsuonline.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tatsuonline.github.io/tags/graham-blumenthal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,19 +18,6 @@
       
       <guid>https://tatsuonline.github.io/posts/earn-it/</guid>
       <description>Introduction Earlier this month, United States Senators Lindsey Graham and Richard Blumenthal introduced a bill on the floor, the so-called EARN IT Act. The title of the bill is a backronym which spells out &amp;ldquo;E liminating A busive and R ampant N eglect of I nteractive T echnologies&amp;rdquo;. The purported goal of this bill is to establish a National Commission on Online Child Sexual Exploitation Prevention; however, the true goal of the Senators is to exploit the general lack of public understanding of the technology behind encryption and to eliminate its use.</description>
-    </item>
-    
-    <item>
-      <title>Visualizing Maxwell&#39;s Equations</title>
-      <link>https://tatsuonline.github.io/posts/maxwell/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 -0700</pubDate>
-      
-      <guid>https://tatsuonline.github.io/posts/maxwell/</guid>
-      <description>Introduction There are a few times in physics when the equations describing physical phenomena are surprisingly simple and beautiful as a result. Maxwell&amp;rsquo;s equations are an excellent example of this; with just four equations, all of classical electromagnetism can be described.
-In differential form1, they are as follows:
-\begin{equation} \label{eq:1} \nabla \cdot E = \frac{\rho}{\varepsilon_0} \end{equation}
-\begin{equation} \label{eq:2} \nabla \cdot B = 0 \end{equation}
-\begin{equation} \label{eq:3} \nabla \times E = -\frac{\partial B}{\partial t} \end{equation}</description>
     </item>
     
   </channel>

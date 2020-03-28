@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Visualizing Maxwell&#39;s Equations // Tatsu Online</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.68.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Alexander Phillips" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://tatsuonline.github.io/css/main.min.888390b0ffbd3298b3f40474223879aafc6d63c27e2412990344e2677ce154e2.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Visualizing Maxwell&#39;s Equations"/>
+<meta name="twitter:description" content="Introduction There are a few times in physics when the equations describing physical phenomena are surprisingly simple and beautiful as a result. Maxwell&rsquo;s equations are an excellent example of this; with just four equations, all of classical electromagnetism can be described.
+In differential form1, they are as follows:
+\begin{equation} \label{eq:1} \nabla \cdot E = \frac{\rho}{\varepsilon_0} \end{equation}
+\begin{equation} \label{eq:2} \nabla \cdot B = 0 \end{equation}
+\begin{equation} \label{eq:3} \nabla \times E = -\frac{\partial B}{\partial t} \end{equation}"/>
+
+    <meta property="og:title" content="Visualizing Maxwell&#39;s Equations" />
+<meta property="og:description" content="Introduction There are a few times in physics when the equations describing physical phenomena are surprisingly simple and beautiful as a result. Maxwell&rsquo;s equations are an excellent example of this; with just four equations, all of classical electromagnetism can be described.
+In differential form1, they are as follows:
+\begin{equation} \label{eq:1} \nabla \cdot E = \frac{\rho}{\varepsilon_0} \end{equation}
+\begin{equation} \label{eq:2} \nabla \cdot B = 0 \end{equation}
+\begin{equation} \label{eq:3} \nabla \times E = -\frac{\partial B}{\partial t} \end{equation}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tatsuonline.github.io/posts/maxwell/" />
+<meta property="article:published_time" content="2019-06-01T00:00:00-07:00" />
+<meta property="article:modified_time" content="2019-06-01T00:00:00-07:00" />
+
+
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://tatsuonline.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="Alexander Phillips" /></a>
+      <h1>Tatsu Online</h1>
+      <p>&#39;Please, for the love of God, stop sending me your blog posts.&#39; - Mom</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="http://alexphillips.xyz" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://github.com/tatsuonline" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://www.linkedin.com/in/alexander-phillips-40431280/" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>linkedin</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Visualizing Maxwell&#39;s Equations</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jun 1, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://tatsuonline.github.io/tags/physics/">Physics</a><a class="tag" href="https://tatsuonline.github.io/tags/maxwell/">Maxwell</a><a class="tag" href="https://tatsuonline.github.io/tags/equations/">Equations</a><a class="tag" href="https://tatsuonline.github.io/tags/math/">Math</a><a class="tag" href="https://tatsuonline.github.io/tags/sagemath/">Sagemath</a></div></div>
+    </header>
+    <div class="post-content">
+      <h2 id="introduction">Introduction</h2>
+<p>There are a few times in physics when the equations describing physical phenomena are surprisingly simple and beautiful as a result. Maxwell&rsquo;s equations are an excellent example of this; with just four equations, all of classical electromagnetism can be described.</p>
+<p>In differential form<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, they are as follows:</p>
+<p>\begin{equation}
+\label{eq:1}
+\nabla \cdot E = \frac{\rho}{\varepsilon_0}
+\end{equation}</p>
+<p>\begin{equation}
+\label{eq:2}
+\nabla \cdot B = 0
+\end{equation}</p>
+<p>\begin{equation}
+\label{eq:3}
+\nabla \times E = -\frac{\partial B}{\partial t}
+\end{equation}</p>
+<p>\begin{equation}
+\label{eq:4}
+\nabla \times B = \mu_0 (J + \varepsilon_0 \frac{\partial E}{\partial t})
+\end{equation}</p>
+<p>While mathematically describing physical behavior is efficient, it can be hard to properly visualize it. What are the above equations describing exactly? Let us go through them one by one.</p>
+<h2 id="gauss-s-law">Gauss&rsquo;s Law</h2>
+<p>Gauss&rsquo;s Law is what we call equation \ref{eq:1}, where it is quite simply stating that the amount of electric field going through a surface (also known as <em>flux</em>) is equivalent to the total amount of electric charge on the surface divided by the permittivity of free space (how much it can permeate in a vacuum).</p>
+<p>How does the equation show this? Well, the ∇ in the equation is the <em>del operator</em> which is definied as follows:</p>
+<p>\begin{equation}
+\label{eq:5}
+\nabla = \hat{x}\frac{\partial }{\partial x} + \hat{y}\frac{\partial }{\partial y} + \hat{z}\frac{\partial }{\partial z}
+\end{equation}</p>
+<p>It is finding the rate of change of whatever it is multiplied by in every direction. If you multiplied it by a scalar value, it would provide you with a gradient. However, if you multiply it with a vector by using a dot product, it provides you with something very interesting:</p>
+<p>\begin{equation*}
+\nabla \cdot v = (\hat{x}\frac{\partial }{\partial x} + \hat{y}\frac{\partial }{\partial y} + \hat{z}\frac{\partial }{\partial z}) \cdot (v_x \hat{x} + v_y \hat{y} + v_z \hat{z})
+\end{equation*}</p>
+<p>\begin{equation}
+\label{eq:6}
+= \hat{x}\frac{\partial v_x}{\partial x} + \hat{y}\frac{\partial v_y}{\partial y} + \hat{z}\frac{\partial v_z}{\partial z}
+\end{equation}</p>
+<p>This is called the <em>divergence</em> of a vector. What it describes is how much the vector is diverging or spreading out from a point. For example, if you described the electric field emanating from a positive charge as a vector field and measured the divergence of the vectors from the charge, you would get a large positive divergence. A useful approach is to associate divergence with density. If the vectors are moving apart or coming closer together (i.e. their density is changing), they have positive and negative divergence respectfully. Vectors that are equally densely separated have no divergence.</p>
+<p>If we wanted to visualize the vector field of a point charge, we could do so with the following snippet of code utilizing the sagemath library:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">var(<span style="color:#e6db74">&#34;y&#34;</span>)
+plot_vector_field((<span style="color:#f92672">-</span>x,<span style="color:#f92672">-</span>y), (x,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), (y,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), figsize<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>)
+</code></pre></div><p>The figure it produces is as follows:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure>
+    <img src="/ox-hugo/negative_divergence.png"
+         alt="Figure 1: Negative divergence of an electric vector field belonging to a point charge at the origin."/> <figcaption>
+            <p>Figure 1: Negative divergence of an electric vector field belonging to a point charge at the origin.</p>
+        </figcaption>
+</figure>
+
+<p>The remaining variables in equation \ref{eq:1} are quite straight forward. The <strong>E</strong> is a vector field representing the electric field produced by a point charge (or many). The <strong>ρ</strong> represents the density of the electric charges on or in the surface in question and the <strong>ε<!-- raw HTML omitted -->0<!-- raw HTML omitted --></strong> is the permittivity of free space.</p>
+<h2 id="gauss-s-law-for-magnetism">Gauss&rsquo;s Law for Magnetism</h2>
+<p>Now, Gauss&rsquo;s law for magnetism in equation \ref{eq:2} is by far the simplest of Maxwell&rsquo;s equations. Its explanation is also surprisingly simple: there are no magnetic monopoles (as there are with electric charges), instead there are only magnetic dipoles. The positive side of the dipole will produce a vector field with positive divergence that will eventually loop back to the negative side of the dipole <em>with an equally negative divergence.</em> The result is that the total divergence of a magnetic vector field is 0, since the positive and negative divergence cancel out.</p>
+<p>Once again, we can utilize the sagemath library and execute the following:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">var(<span style="color:#e6db74">&#34;y&#34;</span>)
+plot_vector_field((<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>x<span style="color:#f92672">*</span>y,y<span style="color:#f92672">*</span>y <span style="color:#f92672">-</span> x<span style="color:#f92672">*</span>x), (x,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), (y,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), figsize<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>)
+</code></pre></div><p>The resulting figure is as follows:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure>
+    <img src="/ox-hugo/true_dipole.png"
+         alt="Figure 2: An example of a magnetic dipole displayed as a vector field."/> <figcaption>
+            <p>Figure 2: An example of a magnetic dipole displayed as a vector field.</p>
+        </figcaption>
+</figure>
+
+<p>In figure 2, we can see quite clearly that any outgoing field lines eventually become incoming field lines. Thus, the net magnetic flux is <em>always</em> zero.</p>
+<h2 id="faraday-s-law-of-induction">Faraday&rsquo;s Law of Induction</h2>
+<p>Equation \ref{eq:3} is a very interesting one. You will notice that we are multiplying the del operator and the electric field by using a <em>cross product</em>. Using a cross product with the del operator yields us very different results than when we use the dot product:</p>
+<p>\begin{equation}
+\label{eq:7}
+\nabla \times v = \hat{x}(\frac{\partial v_z}{\partial y} - \frac{\partial v_y}{\partial z}) + \hat{y}(\frac{\partial v_x}{\partial z} - \frac{\partial v_z}{\partial x}) + \hat{z}(\frac{\partial v_y}{\partial x} - \frac{\partial v_x}{\partial y})
+\end{equation}</p>
+<p>This is called the <em>curl</em> of a vector. Like the divergence, the curl is an excellent name because it shows us how much the vector is curling or rotating. So Faraday&rsquo;s law of induction is telling us that the curl of the electric field is equal to the negative rate of change of the magnetic field with time.</p>
+<p>Here we must keep in mind one of the golden rules in physics: nature always opposes any induced change<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. If you passed a magnet through a coil of wire (thus creating a magnetic field that changes with time), it would induce a current in the coil which would then in turn create a magnetic field <em>opposing</em> the changing magnetic field you produced.</p>
+<p>Let us see what the curl of the electric field would look like. Using sagemath, we can try the following:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">var(<span style="color:#e6db74">&#34;y&#34;</span>)
+plot_vector_field((y,<span style="color:#f92672">-</span>x), (x,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), (y,<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>), figsize<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>)
+</code></pre></div><p>Which results in the following figure:</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<figure>
+    <img src="/ox-hugo/curl.png"
+         alt="Figure 3: An example of an electric vector field with a large positive curl."/> <figcaption>
+            <p>Figure 3: An example of an electric vector field with a large positive curl.</p>
+        </figcaption>
+</figure>
+
+<p>By using the right hand rule on figure 3, we can see that the magnetic field lines will go into the screen. If you had a magnetic field coming out of the screen, the electric field would be produced as in figure 3 and the resulting magnetic field would oppose the one coming out of the screen.</p>
+<h2 id="ampère-s-law">Ampère&rsquo;s Law</h2>
+<p>At first glance, equation \ref{eq:4} seems complicated; it certainly is the longest of Maxwell&rsquo;s equations. However, once we break it down, its simplicity will become more evident. There are two new terms in this equation, <strong>μ_0</strong> (the permeability of free space) and <strong>J</strong> (the total electric current density). In essence, all Ampère&rsquo;s law is stating is that a magnetic field can be produced by an electric current or a changing electric field.</p>
+<p>The visualization of the magnetic field produced will be very similar to figure 2. If you have current running through a wire, we can use the right hand rule to see how the magnetic field would get produced around it.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>If you thought I was going to write out all those integrals in Latex, you thought wrong. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>This is coincidentally roughly the same excuse I get from my boss when I ask for a raise. If <strong>m</strong> is my salary earned, <strong>t</strong> is time, <strong>i</strong> is inflation and <strong>w</strong> is my will to live, we can construct the following equation: \begin{equation*} w = \frac{\partial m}{\partial t} - \frac{\partial i}{\partial t} \end{equation*} Please send help. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
